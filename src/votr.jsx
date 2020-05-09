@@ -6,7 +6,7 @@ class Contestant extends Component {
     render() { 
         return ( 
             <div className="App" >
-            <div className="wall">
+            <div className="wall" style={{border:`5px ${this.props.contest.bdc} solid`}}>
               <img src={this.props.contest.image} alt="this is to show contestant" className="img"/>
               <div className="info">
                 <p className = 'name'> {this.props.contest.name} </p>
